@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="index.js"></script>
+  
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- header !-->
+      <header>
+        <h1>Pomodoro Timer</h1>
+      </header>
+      <!-- /header !-->
+      
+      <!-- user controls !-->
+        <div class="controlpad">
+          <!-- rest !-->
+          <h3 class="restC"><span class="upper">Rest</span> Length</h3>
+            <button type="button" id="plus" class="fa fa-caret-up"></button>
+          <br />
+            <span id="rest">5</span>
+          <br />
+            <button type="button" id="minus" class="fa fa-caret-down"></button>
+          <!-- /rest !-->
+          <!-- session !-->
+          <h3 class="sessionC"><span class="upper">Session</span> Length</h3>
+            <button type="button" id="plus2" class="fa fa-caret-up"></button>
+          <br />
+            <span id="session">25</span>
+          <br />
+            <button type="button" id="minus2" class="fa fa-caret-down"></button>
+        </div>
+        <!-- /session !-->
+        <!-- /user controls !-->
+      
+        <!-- timer/progress bar !-->
+        <div class=circleBox>
+          <div class="timerBox">
+            <h2 id="status">Work</h2>
+            <canvas id="progress"></canvas>
+            <div id="timer"></div>
+            <div class="timerCbox">
+              <button type="button" id="start">Start</button>
+              <button type="button" id="pause">Pause</button>
+              <button type="button" id="reset">Reset</button>
+            </div>
+          </div>
+       </div>
+        <!-- /timer/progress bar !-->
+      
+      <div id="clear"></div>
+      
+      <!-- footer !-->
+      <footer>
+        <div class="footBox">
+          <nav role="navigation">
+            <ul>
+              <li><a href="#" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="#" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="#" title="Linkedin"><i class="fa fa-linkedin fa-2x"></i></a></li>
+              <li><a href="#" title="FreeCodeCamp"><i class="fa fa-fire fa-2x"></i></a></li>
+            </ul>
+          </nav>
+          <p>*water progress bubble used here is a jQuery plugin made by <a href="https://www.jqueryscript.net/chart-graph/Customizable-Liquid-Bubble-Chart-With-jQuery-Canvas.html">fiona23</a></p>
+        </div>
+      </footer>
+    </div>
+    </body>
+  </html>
