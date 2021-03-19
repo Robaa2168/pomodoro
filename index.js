@@ -32,7 +32,7 @@ $('#plus2').click(function() {
 
 // This sets up the audio...
 var audio = new Audio('http://soundbible.com/grab.php?id=1852&type=mp3');
-// ...and the function to play the audio
+
 function alarm() {
   audio.play();
 }
